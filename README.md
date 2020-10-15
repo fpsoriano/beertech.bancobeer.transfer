@@ -1,9 +1,14 @@
-# beertech.bancobeer
-To run project, execute in root directory:
+# beertech.bancobeer.transfer
+1 Rodar o comando abaixo para subir o projeto (consumer, api, mysql e rabbitma)
 docker-compose up
 
-After that, go to http://localhost:15672, selecr Queues and after in conta-corrente.
-To send message to queue:
+2 Acessar a url http://localhost:15672
+
+3- Selecionar a fila conta-corrente.
+
+
+Enviar o(s) payload(s):
+
 {"tipo": "DEPOSITO", "valor": 1, "hash": 1}
 
 {"tipo": "SAQUE", "valor": 1, "hash": 1}
